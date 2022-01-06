@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using api_productos.Models;
 
+
 namespace api_productos.Controllers
 {
     [Route("api/[controller]")]
@@ -59,7 +60,7 @@ namespace api_productos.Controllers
                 return BadRequest();
             }
         }
-        
+
 
         public async Task<ActionResult> Put([FromBodyAttribute] Productos productos)
         {
@@ -75,6 +76,7 @@ namespace api_productos.Controllers
                 return BadRequest();
             }
         }
+        
 
 
 
